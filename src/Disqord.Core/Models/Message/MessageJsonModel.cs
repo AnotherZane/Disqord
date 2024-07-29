@@ -100,4 +100,7 @@ public class MessageJsonModel : JsonModel
 
     [JsonProperty("poll")]
     public Optional<PollJsonModel> Poll;
+
+    [JsonProperty("call")]
+    public Optional<MessageCallJsonModel> Call;
 }
