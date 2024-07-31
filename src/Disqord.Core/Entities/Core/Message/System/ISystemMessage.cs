@@ -21,4 +21,13 @@ public interface ISystemMessage : IMessage
     ///     See <see cref="Discord.Internal.GetSystemMessageContent(ISystemMessage, IGuild)"/>.
     /// </remarks>
     string RawContent { get; }
+
+    /// <summary>
+    ///     Gets the call information for this message.
+    /// </summary>
+    /// <returns>
+    ///     The call information of the message or <see langword="null"/> if the type of the message is not
+    ///     <see cref="SystemMessageType.Call"/>.
+    /// </returns>
+    IMessageCall? Call { get; }
 }
